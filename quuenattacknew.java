@@ -1,3 +1,10 @@
+/*We can just initially calculate the maximum distance the queen can attack in each direction.
+Then we will analyse the obstacle positions and see if it lies in the queen's path.
+If it does then we will update the distance traversable by the queen in the particular direction.
+In case another obstacle is found in the same direction then we will have to check
+if the new obstacle cuts the traversable distance more than the previous one.
+If it does then we need to update the distance in that direction again.
+At the end just add up the traversable distance in all directions to get the final answer.*/
 import java.io.*;
 import java.util.*;
 public class quuenattacknew {
