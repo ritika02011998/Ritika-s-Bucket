@@ -4,14 +4,14 @@ public class quuenattacknew {
 
     // Complete the queensAttack function below.
    static int queensAttack(int n, int k, int rq, int cq, int[][] ob) {
-   	int du=n-rq;
-   	int dur=Math.min(n-rq, n-cq);
-   	int dr=n-cq;
-   	int dbr=Math.min(rq-1, n-cq);
-   	int db=rq-1;
-   	int dbl=Math.min(rq-1, cq-1);
-   	int dl=cq-1;
-   	int dul=Math.min(cq-1, n-rq);
+   	int du=n-rq; //maximum distance upwards
+   	int dur=Math.min(n-rq, n-cq);//maximum upper-right distance
+   	int dr=n-cq;//maximum right distance
+   	int dbr=Math.min(rq-1, n-cq);//maximum bottom-right distance
+   	int db=rq-1;//maximum bottom distance
+   	int dbl=Math.min(rq-1, cq-1);//maximum bottom-left distance
+   	int dl=cq-1;//maximum left distance
+   	int dul=Math.min(cq-1, n-rq);//maximum upper-left distance
    	
    	for(int i=0;i<k;i++) {
    		int r=ob[i][0];
